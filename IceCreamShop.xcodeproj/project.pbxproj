@@ -19,6 +19,11 @@
 		24ED70CD18D76D9B0062171D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ED70B518D76D9B0062171D /* UIKit.framework */; };
 		24ED70D518D76D9B0062171D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24ED70D318D76D9B0062171D /* InfoPlist.strings */; };
 		24ED70D718D76D9B0062171D /* IceCreamShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED70D618D76D9B0062171D /* IceCreamShopTests.m */; };
+		24ED70E118D76DE40062171D /* Flavors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24ED70E018D76DE40062171D /* Flavors.plist */; };
+		24ED70E518D76E2B0062171D /* GCListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED70E318D76E2B0062171D /* GCListViewController.m */; };
+		24ED70E618D76E2B0062171D /* GCListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24ED70E418D76E2B0062171D /* GCListViewController.xib */; };
+		24ED70EA18D76EE50062171D /* GCAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED70E818D76EE50062171D /* GCAddViewController.m */; };
+		24ED70EB18D76EE50062171D /* GCAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24ED70E918D76EE50062171D /* GCAddViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		24ED70D218D76D9B0062171D /* IceCreamShopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IceCreamShopTests-Info.plist"; sourceTree = "<group>"; };
 		24ED70D418D76D9B0062171D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24ED70D618D76D9B0062171D /* IceCreamShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IceCreamShopTests.m; sourceTree = "<group>"; };
+		24ED70E018D76DE40062171D /* Flavors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Flavors.plist; path = ../Flavors.plist; sourceTree = "<group>"; };
+		24ED70E218D76E2B0062171D /* GCListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCListViewController.h; sourceTree = "<group>"; };
+		24ED70E318D76E2B0062171D /* GCListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCListViewController.m; sourceTree = "<group>"; };
+		24ED70E418D76E2B0062171D /* GCListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCListViewController.xib; sourceTree = "<group>"; };
+		24ED70E718D76EE50062171D /* GCAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAddViewController.h; sourceTree = "<group>"; };
+		24ED70E818D76EE50062171D /* GCAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAddViewController.m; sourceTree = "<group>"; };
+		24ED70E918D76EE50062171D /* GCAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCAddViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,13 @@
 			children = (
 				24ED70C018D76D9B0062171D /* GCAppDelegate.h */,
 				24ED70C118D76D9B0062171D /* GCAppDelegate.m */,
+				24ED70E218D76E2B0062171D /* GCListViewController.h */,
+				24ED70E318D76E2B0062171D /* GCListViewController.m */,
+				24ED70E418D76E2B0062171D /* GCListViewController.xib */,
+				24ED70E718D76EE50062171D /* GCAddViewController.h */,
+				24ED70E818D76EE50062171D /* GCAddViewController.m */,
+				24ED70E918D76EE50062171D /* GCAddViewController.xib */,
+				24ED70E018D76DE40062171D /* Flavors.plist */,
 				24ED70C318D76D9B0062171D /* Images.xcassets */,
 				24ED70B818D76D9B0062171D /* Supporting Files */,
 			);
@@ -220,7 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24ED70EB18D76EE50062171D /* GCAddViewController.xib in Resources */,
+				24ED70E118D76DE40062171D /* Flavors.plist in Resources */,
 				24ED70BC18D76D9B0062171D /* InfoPlist.strings in Resources */,
+				24ED70E618D76E2B0062171D /* GCListViewController.xib in Resources */,
 				24ED70C418D76D9B0062171D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				24ED70C218D76D9B0062171D /* GCAppDelegate.m in Sources */,
+				24ED70E518D76E2B0062171D /* GCListViewController.m in Sources */,
+				24ED70EA18D76EE50062171D /* GCAddViewController.m in Sources */,
 				24ED70BE18D76D9B0062171D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

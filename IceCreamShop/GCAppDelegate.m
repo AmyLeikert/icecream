@@ -7,14 +7,19 @@
 //
 
 #import "GCAppDelegate.h"
+#import "GCListViewController.h"
 
 @implementation GCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    GCListViewController *listViewController = [[GCListViewController alloc] initWithNibName:@"GCListViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    // ^ designates that viewcontroller as the navigation controller
+    self.window.rootViewController = self.navController;
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+   // self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
